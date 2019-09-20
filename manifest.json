@@ -17,15 +17,14 @@
         }
       },
       "background": {
-        "scripts": ["./scripts/movieData.js"],
+        "scripts": ["./scripts/jquery/jquery.js","./scripts/movieDataBGR.js"],
         "persistent": false
       }, 
       "permissions": ["tabs", "webNavigation"],
       "content_scripts": [
         {
-          "matches": ["https://*.netflix.com/*"],
-          "js": ["./scripts/contentscript.js"],
-          "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+          "matches": ["https://*.netflix.com/browse"],
+          "js": ["./scripts/contentscript.js"]
         }
       ]
   }

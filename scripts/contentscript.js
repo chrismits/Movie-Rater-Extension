@@ -10,12 +10,21 @@ document.onmouseover = function(e) {
 
     if (title != null && title != "") {
         chrome.runtime.sendMessage({movie: title}, function(response) {
-            console.log(response.rating);
+            console.log(response);
+            display(response);
         });
     }
 };
 
+function display(response) {
+    var bod = document.getElementsByTagName('body')[0];
 
+    bod.insertAdjacentHTML('afterbegin', 
+    `<body style="
+        outline: 4px solid #00FF4B;
+        outline-offset: 0px;
+        ">>RATING IS 10</body>`);
+}
 
 
 function elementAtMouse() {
