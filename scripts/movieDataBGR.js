@@ -5,18 +5,18 @@
 //     });
 //   });
 
-function getIMDBrating(movie) {
-  var rating;
-  $.getJSON('http://www.omdbapi.com/?apikey=54386718&t=' + encodeURI(movie)).then(function(response) {
-    if (response != null) {
-      if (response.imdbRating) {
-         rating = response.imdbRating;
-      }
-    }
-  });
+// function getIMDBrating(movie) {
+//   var rating;
+//   $.getJSON('http://www.omdbapi.com/?apikey=54386718&t=' + encodeURI(movie)).then(function(response) {
+//     if (response != null) {
+//       if (response.imdbRating) {
+//          rating = response.imdbRating;
+//       }
+//     }
+//   });
 
-  return rating;
-}
+//   return rating;
+// }
 
 //receive from content script
 chrome.runtime.onMessage.addListener(

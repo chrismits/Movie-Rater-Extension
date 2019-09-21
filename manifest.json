@@ -20,11 +20,9 @@
         "scripts": ["./scripts/jquery/jquery.js","./scripts/movieDataBGR.js"],
         "persistent": false
       }, 
-      "permissions": ["tabs", "webNavigation"],
-      "content_scripts": [
-        {
-          "matches": ["https://*.netflix.com/browse"],
-          "js": ["./scripts/contentscript.js"]
-        }
-      ]
+      "permissions": ["activeTab", "webNavigation"],   
+      "content_scripts": [{
+          "matches": ["*://www.netflix.com/*"],
+          "js": ["./scripts/jquery/jquery.js", "./scripts/contentscript.js"]
+      }]
   }
