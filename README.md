@@ -1,4 +1,4 @@
-# Movie-Rater-Extension
+# IMDb Netflix Rating Chrome Extension
 
 ## Overview
 
