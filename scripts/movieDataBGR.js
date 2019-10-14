@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener(
         requested = request.movie
         console.log("HELLO");
         //get IMDB rating
-        $.getJSON('http://www.omdbapi.com/?apikey=54386718&t=' + encodeURI(request.movie)).then(function(response) {
+        $.getJSON('http://www.omdbapi.com/?apikey=ADD_API_KEY_HERE&t=' + encodeURI(request.movie)).then(function(response) {
           if (response.imdbRating) {
             sendResponse({"title": response.Title, "imdb": response.imdbRating}, );
           }
