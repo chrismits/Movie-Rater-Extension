@@ -1,6 +1,4 @@
 //Content script that only runs when in netflix domain. Periodically checks for new titles every second
-console.log("Running")
-
 function getTitle(obj) {
     var ancestor = $(obj).closest("div.jawBone")
     var h1 = $(ancestor).children("h1").find("img").attr("alt")
