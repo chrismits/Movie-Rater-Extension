@@ -5,8 +5,9 @@
 This repository contains the source code for a chrome extension that automatically displays IMDb ratings of video titles in-site when browsing Netflix, by locally manipulating the DOM tree of Netflix. 
 
 ## Demo
-To see how it looks, check out this video: https://www.youtube.com/watch?v=WK7yO8BC43A.
-
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=WK7yO8BC43A
+" target="_blank"><img src="http://img.youtube.com/vi/WK7yO8BC43A/0.jpg" 
+alt="Demo Video on Youtube" width="240" height="180" border="10" /></a>
 ## How it Works
 
 ### How are IMDb ratings retrieved: 
